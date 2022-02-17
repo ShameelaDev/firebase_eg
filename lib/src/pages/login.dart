@@ -12,44 +12,40 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Login Page"),
+        title: const Text("Login Page"),
       ),
       body: SingleChildScrollView(
         child: Center(
           child: Padding(
-            padding: EdgeInsets.symmetric(vertical: 200),
+            padding: const EdgeInsets.symmetric(vertical: 200),
             child: Column(
               children: [
-                Padding(
-                  padding: EdgeInsets.only(left: 15,right: 15),
+                const Padding(
+                  padding: EdgeInsets.only(left: 15, right: 15),
                   child: TextField(
                     decoration: InputDecoration(
                         border: OutlineInputBorder(),
-                        labelText:'Email',
-                        hintText: "Enter a valid Email"
-
-                    ),
+                        labelText: 'Email',
+                        hintText: "Enter a valid Email"),
                   ),
                 ),
-                SizedBox(height: 10,),
-                Padding(
-                  padding: EdgeInsets.only(left: 15,right: 15),
+                const SizedBox(
+                  height: 10,
+                ),
+                const Padding(
+                  padding: EdgeInsets.only(left: 15, right: 15),
                   child: TextField(
                     decoration: InputDecoration(
                         border: OutlineInputBorder(),
-                        labelText:'Password',
-                        hintText: "Enter your password"
-
-                    ),
+                        labelText: 'Password',
+                        hintText: "Enter your password"),
                   ),
                 ),
-                SizedBox(height: 25,),
-                TextButton(onPressed: (){}, child: Text("forgot password?")),
-                ElevatedButton(
-                    onPressed: (){},
-                    child: Text("Login")),
-
-
+                const SizedBox(
+                  height: 25,
+                ),
+                TextButton(onPressed: () {}, child: const Text("forgot password?")),
+                ElevatedButton(onPressed: () {}, child: const Text("Login")),
               ],
             ),
           ),
